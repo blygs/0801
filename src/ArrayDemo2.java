@@ -63,7 +63,8 @@ public class ArrayDemo2 {
 //		}
 		
 		int[] div = {50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1 };
-		while(true) {
+		String ans;
+		do{
 			System.out.print("input Money : ");
 			int input = sc.nextInt();
 			sc.nextLine();
@@ -77,12 +78,9 @@ public class ArrayDemo2 {
 			}
 			
 			System.out.print("Again? (Y/N) : ");
-			String ans = sc.nextLine();
+			ans = sc.nextLine();
 			
-			if(ans.equals("n") || ans.equals("N")) {
-				break;
-			}
-		}
+		}while(ans.equals("y") || ans.equals("Y"));
 		System.out.println("끝!!");
 	}
 }
